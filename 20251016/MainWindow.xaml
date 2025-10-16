@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_20251016"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+         Title="WPF小畫家ver1" Height="450" Width="800">
+    <DockPanel>
+        <Menu Height="30" DockPanel.Dock="Top">
+            <MenuItem Header="檔案" Height="30" VerticalAlignment="Center" FontSize="16">
+                <MenuItem Header="開啟新畫布" VerticalAlignment="Center" FontSize="16" />
+                <MenuItem Header="儲存畫布" VerticalAlignment="Center" FontSize="16" />
+            </MenuItem>
+        </Menu>
+        <ToolBarTray Height="40" Background="LightCyan" DockPanel.Dock="Top">
+            <ToolBar Height="38" Width="500" Background="#FF7DEAEA">
+                <Label Content="筆刷色彩" VerticalContentAlignment="Center" FontSize="16" Margin="10,0,0,0"/>
+
+            </ToolBar>
+            <ToolBar Height="38" Width="500" Background="#FFDDEA95">
+                <Image Height="100" Width="100"/>
+
+            </ToolBar>
+        </ToolBarTray>
+        <StatusBar Height="35" Background="LightGray" DockPanel.Dock="Bottom">
+            <StatusBarItem Width="200">
+                <Label Content="Ready" VerticalAlignment="Center" FontSize="16" Margin="20,0,0,0"/>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem Width="200">
+                <Label Content="Ready" VerticalAlignment="Center" FontSize="16"/>
+                
+            </StatusBarItem>
+        </StatusBar>
+        <Canvas Background="#FF8DCC7C" />
+    </DockPanel>
 </Window>
